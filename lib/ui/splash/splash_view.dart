@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:nactor_ecommerce_a/app_utils/app_colors.dart';
+import 'package:nactor_ecommerce_a/app_utils/appasset_images.dart';
 import 'package:nactor_ecommerce_a/ui/onboarding/onboarding_view.dart';
 
 class SplashView extends StatefulWidget {
@@ -35,18 +36,31 @@ class _SplashViewState extends State<SplashView> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              'Fareed',
-              style: TextStyle(color: Colors.white),
+            Image.asset(AssetsImages.splashIcon),
+            const SizedBox(
+              width: 20.0,
             ),
-            Text(
-              'nectar',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: 'Gilroy-A',
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold),
+            Image.asset(AssetsImages.n),
+            const SizedBox(
+              width: 5.0,
             ),
+            Image.asset(AssetsImages.e),
+            const SizedBox(
+              width: 5.0,
+            ),
+            Image.asset(AssetsImages.c),
+            const SizedBox(
+              width: 5.0,
+            ),
+            Image.asset(AssetsImages.t),
+            const SizedBox(
+              width: 5.0,
+            ),
+            Image.asset(AssetsImages.a),
+            const SizedBox(
+              width: 5.0,
+            ),
+            Image.asset(AssetsImages.r),
           ],
         ),
       ),
