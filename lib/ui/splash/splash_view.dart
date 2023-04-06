@@ -12,24 +12,44 @@ class SplashView extends StatefulWidget {
 }
 
 class _SplashViewState extends State<SplashView> {
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    onComplete();
-  }
+  // @override
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+  //   onComplete();
+  // }
 
-  onComplete() async {
-    Timer(
-        const Duration(seconds: 3),
-        () => Navigator.push(context,
-            MaterialPageRoute(builder: ((context) => const OnBoardingView()))));
-  }
+  // onComplete() async {
+  //   Timer(
+  //       const Duration(seconds: 3),
+  //       () => Navigator.push(context,
+  //           MaterialPageRoute(builder: ((context) => const OnBoardingView()))));
+  // }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.splashbgColour,
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'Fareed',
+              style: TextStyle(color: Colors.white),
+            ),
+            Text(
+              'nectar',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Gilroy-A',
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
