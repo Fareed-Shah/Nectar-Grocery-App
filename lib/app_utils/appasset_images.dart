@@ -1,5 +1,6 @@
 class AssetsImages {
   static String get splashIcon => "splashview_icon.png";
+  static String get splashheaderIcon => "splashview_icon_header.png";
   static String get onBoardingImage => "onboarding_view.png";
   static String get signinviewImage => "signin_view.png";
   static String get n => "n.png";

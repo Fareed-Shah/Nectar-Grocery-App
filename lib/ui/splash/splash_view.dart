@@ -13,19 +13,19 @@ class SplashView extends StatefulWidget {
 }
 
 class _SplashViewState extends State<SplashView> {
-  // @override
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
-  //   onComplete();
-  // }
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    onComplete();
+  }
 
-  // onComplete() async {
-  //   Timer(
-  //       const Duration(seconds: 3),
-  //       () => Navigator.push(context,
-  //           MaterialPageRoute(builder: ((context) => const OnBoardingView()))));
-  // }
+  onComplete() async {
+    Timer(
+        const Duration(seconds: 3),
+        () => Navigator.push(context,
+            MaterialPageRoute(builder: ((context) => const OnBoardingView()))));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -40,27 +40,44 @@ class _SplashViewState extends State<SplashView> {
             const SizedBox(
               width: 20.0,
             ),
-            Image.asset(AssetsImages.n),
-            const SizedBox(
-              width: 5.0,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Image.asset(AssetsImages.n),
+                    const SizedBox(
+                      width: 5.0,
+                    ),
+                    Image.asset(AssetsImages.e),
+                    const SizedBox(
+                      width: 5.0,
+                    ),
+                    Image.asset(AssetsImages.c),
+                    const SizedBox(
+                      width: 5.0,
+                    ),
+                    Image.asset(AssetsImages.t),
+                    const SizedBox(
+                      width: 5.0,
+                    ),
+                    Image.asset(AssetsImages.a),
+                    const SizedBox(
+                      width: 5.0,
+                    ),
+                    Image.asset(AssetsImages.r),
+                  ],
+                ),
+                const Text(
+                  'online groceries',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontFamily: 'Gilroy-A',
+                      color: Colors.white),
+                )
+              ],
             ),
-            Image.asset(AssetsImages.e),
-            const SizedBox(
-              width: 5.0,
-            ),
-            Image.asset(AssetsImages.c),
-            const SizedBox(
-              width: 5.0,
-            ),
-            Image.asset(AssetsImages.t),
-            const SizedBox(
-              width: 5.0,
-            ),
-            Image.asset(AssetsImages.a),
-            const SizedBox(
-              width: 5.0,
-            ),
-            Image.asset(AssetsImages.r),
           ],
         ),
       ),
