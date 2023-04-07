@@ -3,7 +3,7 @@ import 'package:nactor_ecommerce_a/app_utils/app_colors.dart';
 
 class AppButton extends StatelessWidget {
   final String placeHolder;
-  final GestureTapCallback onPress ;
+  final GestureTapCallback onPress;
   const AppButton(
       {super.key, required this.placeHolder, required this.onPress});
 
@@ -12,7 +12,7 @@ class AppButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPress,
       child: Container(
-        height: 67.0,
+        height: 60.0,
         width: 353.0,
         decoration: BoxDecoration(
             color: AppColors.buttonColour,
