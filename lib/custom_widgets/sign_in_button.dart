@@ -10,26 +10,32 @@ class SignInButton extends StatelessWidget {
       {super.key,
       required this.placeHolder,
       required this.titleHolder,
-      required this.onPress,required this.btnColor});
+      required this.onPress,
+      required this.btnColor});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPress,
       child: Container(
-        height: 67.0,
+        height: 60.0,
         width: 353.0,
         decoration: BoxDecoration(
-            color:btnColor,
-            borderRadius: BorderRadius.circular(19.0)),
+            color: btnColor, borderRadius: BorderRadius.circular(19.0)),
         child: Center(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Text(
-                titleHolder,
-                style: const TextStyle(
-                    fontSize: 16, fontFamily: 'Gilroy-A', color: Colors.white),
+              Padding(
+                padding: const EdgeInsets.only(left: 35.0),
+                child: Text(
+                  titleHolder,
+                  style: const TextStyle(
+                      fontSize: 30,
+                      fontFamily: 'Gilroy-A',
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
               const SizedBox(
                 width: 43.0,
