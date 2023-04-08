@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nactor_ecommerce_a/app_utils/app_colors.dart';
 
 class SignInButton extends StatelessWidget {
   final String titleHolder;
