@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nactor_ecommerce_a/app_utils/app_colors.dart';
+import 'package:nactor_ecommerce_a/custom_widgets/app_card.dart';
 
-import 'package:nactor_ecommerce_a/app_utils/appasset_images.dart';
+import '../../app_utils/app_colors.dart';
+import '../../app_utils/appasset_images.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -15,10 +16,10 @@ class HomeView extends StatelessWidget {
             child: Padding(
           padding: const EdgeInsets.only(left: 25.0, right: 25.0, bottom: 50.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(
-                height: 60.0,
+                height: 50.0,
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 40.0),
@@ -83,6 +84,11 @@ class HomeView extends StatelessWidget {
                         borderSide:
                             const BorderSide(color: Color(0xffF2F3F2)))),
               ),
+              AppCard(
+                  heading1: "heading1",
+                  heading2: "heading2",
+                  price: "price",
+                  itemImage: AssetsImages.carditembananaImage)
             ],
           ),
         )),
@@ -98,8 +104,9 @@ class HomeView extends StatelessWidget {
               color: AppColors.boldtextColour),
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'Shop'),
-            // BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Explore'),
-            // BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: 'Cart'),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Explore'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.shopping_cart), label: 'Cart'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.favorite_border), label: 'Favourite'),
             BottomNavigationBarItem(

@@ -12,4 +12,5 @@ class AssetsImages {
   static String get a => "a.png";
   static String get r => "r.png";
   static String get accountImage => "accountImage.png";
+  static String get carditembananaImage => "card_item_banana.png";
 }
