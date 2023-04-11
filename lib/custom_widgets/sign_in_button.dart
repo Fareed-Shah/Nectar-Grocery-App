@@ -4,13 +4,14 @@ class SignInButton extends StatelessWidget {
   final String titleHolder;
   final String placeHolder;
   final GestureTapCallback onPress;
-  final Color btnColor;
-  const SignInButton(
+  Color? btnColor;
+
+  SignInButton(
       {super.key,
       required this.placeHolder,
       required this.titleHolder,
       required this.onPress,
-      required this.btnColor});
+      this.btnColor = const Color(0xff53B175)});
 
   @override
   Widget build(BuildContext context) {

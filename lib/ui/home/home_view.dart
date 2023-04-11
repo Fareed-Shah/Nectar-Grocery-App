@@ -85,19 +85,21 @@ class HomeView extends StatelessWidget {
                             const BorderSide(color: Color(0xffF2F3F2)))),
               ),
               AppCard(
-                  heading1: "heading1",
-                  heading2: "heading2",
-                  price: "price",
+                  heading1: "Organic Bananas",
+                  heading2: "7pcs, Priceg",
+                  price: "\$4.99",
                   itemImage: AssetsImages.carditembananaImage)
             ],
           ),
         )),
       ),
       bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: const Color(0xff53B175),
+          selectedItemColor: AppColors.greenColour,
           unselectedItemColor: AppColors.boldtextColour,
-          selectedLabelStyle: const TextStyle(
-              fontSize: 12, fontFamily: 'Gilroy-A', color: Color(0xff53B175)),
+          selectedLabelStyle: TextStyle(
+              fontSize: 12,
+              fontFamily: 'Gilroy-A',
+              color: AppColors.greenColour),
           unselectedLabelStyle: TextStyle(
               fontSize: 12,
               fontFamily: 'Gilroy-A',

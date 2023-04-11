@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nactor_ecommerce_a/app_utils/app_colors.dart';
 import 'package:nactor_ecommerce_a/app_utils/appasset_images.dart';
 import 'package:nactor_ecommerce_a/custom_widgets/app_button.dart';
+import 'package:nactor_ecommerce_a/custom_widgets/app_textField.dart';
 
 class LogingView extends StatelessWidget {
   const LogingView({super.key});
@@ -61,22 +62,12 @@ class LogingView extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 16,
                     fontFamily: 'Gilroy-A',
-                    // fontWeight: FontWeight.bold,
                     color: Color(0xff7C7C7C)),
               ),
               const SizedBox(
                 height: 10.0,
               ),
-              TextField(
-                decoration: InputDecoration(
-                  hintText: 'imshuvo97@gmail.com',
-                  hintStyle: TextStyle(
-                      fontSize: 18,
-                      fontFamily: 'Gilroy-A',
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.boldtextColour),
-                ),
-              ),
+              const AppTextField(hintText: 'imshuvo97@gmail.com'),
               const SizedBox(
                 height: 40,
               ),
@@ -85,23 +76,12 @@ class LogingView extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 16,
                     fontFamily: 'Gilroy-A',
-                    // fontWeight: FontWeight.bold,
                     color: Color(0xff7C7C7C)),
               ),
               const SizedBox(
                 height: 10.0,
               ),
-              TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  hintText: '*******',
-                  hintStyle: TextStyle(
-                      fontSize: 18,
-                      fontFamily: 'Gilroy-A',
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.boldtextColour),
-                ),
-              ),
+              const AppTextField(hintText: '*******'),
               const SizedBox(
                 height: 20.0,
               ),
